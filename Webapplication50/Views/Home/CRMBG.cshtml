@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "CRMBG";
+    Layout = null;
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .container {
+        /*background-image: url('../Content/images/CRM BG.png');*/
+        width: 100%;
+        background-image: url('../CRMLogin.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: absolute;
+        opacity: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /*background: rgba(76, 175, 80, 0.3);*/
+    }
+    container-fluid{
+        opacity:0.6;
+    }
+
+    img {
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+    }
+
+    .logincontainer {
+        display: flex;
+        background-color: white;
+    }
+</style>
+@*<h2>CRMBG</h2>*@
+<div class="container-fluid"></div>
+<body class="container">
+    <div class="logincontainer">
+        <div class="form-group">
+            <h4> login</h4>
+            <input type="text" id="txtuser" placeholder="username" />
+
+
+
+            <input type="password" id="txtpassword" placeholder="password" />
+
+        </div>
+    </div>
+</body>
+
